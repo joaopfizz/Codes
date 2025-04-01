@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodQuiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Quiz de Nutrição!</h1>
+    </header>
+    <main>
+        <button id="startQuiz">Iniciar Quiz</button>
+        <div id="quizContainer" style="display: none;">
+            <p id="pergunta"></p>
+            <div id="opcoes"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<div id="quizContainer" style="display: none;">
+    <h2 id="pergunta"></h2>
+    <div id="opcoes"></div>
+</div>
+
+
+<div id="resultado" style="display: none;">
+    <h2 id="totalAcertos"></h2>
+    <button id="reiniciarBtn" onclick="reiniciarQuiz()" style="display: none;">Refazer o Quiz</button>
+</div>
+
+<div id="informacoes" style="display: none;">
+    <h2>Informações Importantes</h2>
+    
+    <h3>Erradicar a Fome</h3>
+    <p>A fome no mundo é um problema complexo, mas soluções como o aumento da produção local de alimentos, práticas agrícolas mais eficientes e sistemas de distribuição podem ajudar a erradicar a fome até 2030.</p>
+    
+    <h3>Alcançar a Segurança Alimentar</h3>
+    <p>A segurança alimentar significa garantir que todas as pessoas tenham acesso a alimentos suficientes e nutritivos o tempo todo. Promover a segurança alimentar envolve reduzir o desperdício de alimentos, melhorar a logística de distribuição e promover dietas balanceadas.</p>
+
+    <h3>Melhorar a Nutrição</h3>
+    <p>Melhorar a nutrição é essencial para a saúde global. Isso inclui promover o consumo de alimentos ricos em nutrientes, combater a obesidade e desnutrição, e garantir que as dietas sejam equilibradas e sustentáveis.</p>
+
+    <h3>Promover a Agricultura Sustentável</h3>
+    <p>A agricultura sustentável é a chave para a produção de alimentos de forma ecológica e acessível. Métodos como rotação de culturas, uso racional de recursos e práticas orgânicas são cruciais para garantir que os alimentos sejam produzidos de maneira que respeite o meio ambiente.</p>
+</div>
+
+<div id="feedbackResposta" style="display: none;">
+    <p id="feedbackTexto"></p>
+</div>
